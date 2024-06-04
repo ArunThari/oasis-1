@@ -3,52 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="intro">
-            <div>
-                <img src="arun.jpg" alt="Your Photo" class="profile-pic">
-            </div>
-            <div>
-                <h1>Arun Thari</h1>
-                <p>Web Developer | Designer | Programmer</p>
-            </div>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="input-group">
+            <input type="text" id="temperature" placeholder="Enter temperature">
+            <select id="unit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
         </div>
-    </header>
-    
-    <section class="about">
-        <h2>About Me</h2>
-        <p>Welcome to my personal portfolio website. I am a passionate web developer with experience in creating dynamic and responsive websites. Here you will find samples of my work, my resume, and ways to get in touch with me.</p>
-    </section>
-    
-    <section class="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Hand-Gesture Controlling System</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Automatic Streetlight System</p>
-        </div>
-        <div class="project">
-            <h3>Project 3</h3>
-            <p>Mini Fire Alarm.</p>
-        </div>
-    </section>
-    
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:aruntharisrinu@gmail.com">aruntharisrinu@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ARUN THARI">linkedin.com/in/arun-thari-b993b6238</a></p>
-        <p>GitHub: <a href="https://www.github.com/ARUN THARI">github.com/arun-thari-c8</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Arun. All rights reserved.</p>
-    </footer>
+        <button onclick="convertTemperature()">Convert</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
